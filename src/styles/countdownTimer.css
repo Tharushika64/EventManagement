@@ -1,0 +1,80 @@
+/* Countdown Timer Styles */
+.countdown {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.countdown h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.countdown-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+}
+
+.countdown-item {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem 0.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.countdown.event-started {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.countdown.event-started p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .countdown {
+    padding: 1.5rem;
+  }
+
+  .countdown-container {
+    gap: 0.5rem;
+  }
+
+  .countdown-item {
+    padding: 1rem 0.25rem;
+  }
+
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+
+  .countdown-label {
+    font-size: 0.75rem;
+  }
+}
